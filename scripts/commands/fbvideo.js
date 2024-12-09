@@ -15,8 +15,8 @@ module.exports = {
     "vi": {},
         "en": {
             "missing": '[ ! ] Input link.',
-            "wait": '𝖣𝖮𝖶𝖭𝖫𝖮𝖠𝖣 𝖵𝖨𝖣𝖤𝖮 𝖥𝖮𝖱 𝖸𝖮𝖴\n\n 𝖯𝖫𝖤𝖠𝖲𝖤 𝖶8•••',
-          "down": '✅𝖣𝖮𝖶𝖭𝖫𝖮𝖠𝖣𝖤𝖣 𝖲𝖴𝖢𝖢𝖤𝖲𝖲𝖥𝖴𝖫𝖫𝖸',
+            "wait": '𝐃𝐎𝐖𝐍𝐋𝐎𝐀𝐃𝐈𝐍𝐆 𝐕𝐈𝐃𝐄𝐎 𝐅𝐎𝐑 𝐘𝐎𝐔\n\n𝐏𝐋𝐄𝐀𝐒𝐄 𝐖𝟖...',
+          "down": '✅Downloaded Successfully',
           "error": '❌Error'
         }
     },
@@ -25,7 +25,7 @@ start: async function({ nayan, events, args, lang }) {
     const axios = require("axios")
     const request = require("request")
     const fs = require("fs-extra")
-  const { ytdown, ndown, tikdown, twitterdown } = require("nayan-media-downloader")
+  const { ytdown, ndown, tikdown, twitterdown } = require("nayan-video-downloader")
     const { messageID, threadID } = events;
   if (!args[0]) return nayan.reply(lang("missing"), threadID, messageID);
 
